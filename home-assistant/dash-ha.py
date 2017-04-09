@@ -11,7 +11,7 @@ host = config['host']
 password = config.get('api_password', '')
 port = str(config.get('port', 8123))
 
-endpoint = 'http://' + host + ':' + port + '/api/event/'
+endpoint = 'http://' + host + ':' + port + '/api/events/'
 headers = {'content-type': 'application/json'}
 if len(password) > 0:
     headers['x-ha-access'] = password
